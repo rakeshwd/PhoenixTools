@@ -1,18 +1,30 @@
   /* Center the content */
-  .body {
+  body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
+    
+  }
+ 
+ 
+  .company{
+    padding: 20px;
+    padding-bottom: 40px;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(21, 104, 104);
+    text-align: center;
   }
   
   /* Style the textboxes and button */
   input[type="number"] {
-    padding: 10px;
+    padding: 15px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 4px;
     margin-right: 10px;
+    margin-top: 5px;
   }
   .dropdown{
     padding: 5px;
@@ -21,11 +33,26 @@
   }
   
  .psfresult{
-padding-top: 10%;
-padding-left: 50%;
+  padding-top: 10%;
+  padding-left: 30%;
       }
 
-  button {
+      label{
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+      }
+  label span { 
+        
+    font-size: 25px;
+    padding: 10px;
+    background-color: yellow; 
+    border-radius: 10px;
+    border: 2px solid;
+      
+      }
+
+      button {
     padding: 10px 20px;
     font-size: 25px;
     background-color: #4CAF50;
