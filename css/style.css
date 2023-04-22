@@ -1,0 +1,40 @@
+  /* Center the content */
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Style the textboxes and button */
+  input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  .dropdown{
+    padding: 5px;
+    border: solid 2px;
+    align-items: center;
+  }
+  
+ .psfresult{
+padding-top: 10%;
+padding-left: 50%;
+      }
+
+  button {
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
