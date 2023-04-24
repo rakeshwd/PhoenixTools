@@ -8,44 +8,65 @@
   </head>
   
   <body>
-    <div>
-      <div class="company"> UPVC quotation software by Phoenix Software Solurtions</div>
+    <main>
+      <section class="glass">
+        <div class="dashboard">
+          <div class="user">
+            <img src="./images/user.svg" alt="" />
+            <h3>Dhirendra Pant</h3>
 
-      <select class="dropdown">
-        <option value="option1">3 TRACK-8mm</option>
-        <option value="option2"> SINGLE TRACK/FIXED</option>
-        <option value="option3">CASEMENT-WINDOW-IN</option>
-      </select>
+          </div>
+          <div class="links">
+            <div class="link">
+              <h2>3 TRACK 8mm</h2>
+            </div>
+            <div class="link">
+              <h2>CASEMENT</h2>
+            </div>
+            <div class="link">
+              <h2>SINGLE TRACK/FIXED</h2>
+            </div>
+         </div>
+          <div class="pro">
+            <span>POWERED BY PHOENIX</span>
+          </div>
+        </div>
+    <div>
+      <div class="company"> UPVC Quotation Software by Phoenix Software Solutions</div>
 
       <label for="num1">LENGTH in feet:</label>
-      <input type="number" id="num1">
+      <input class="calculate" type="number" id="num1">
       <label for="num2">BREADTH in feet:</label>
-      <input type="number" id="num2">
+      <input class="calculate" type="number" id="num2">
+      <div class="button_align">
       <button onclick="sum()">CALCULATE</button>
-      <br>
+      </div>
 
     <div class="psfresult">
-      <label for="fc">FRAME COST= </label>
+      <label for="fc">FRAME COST </label>
       <input type="number" id="fc" disabled>
     </br>
-      <label for="gifc">GI FRAME COST = </label>
+      <label for="gifc">GI FRAME COST  </label>
       <input type="number" id="gifc" disabled>
       </br>
-      <label for="sc">SASH COST = </label>
+      <label for="sc">SASH COST  </label>
       <input type="number" id="sc" disabled>
     </br>
-    <label for="gisc">GI SASH COST = </label>
+    <label for="gisc">GI SASH COST  </label>
     <input type="number" id="gisc" disabled>
      
   </br>
-  <label for="gc">GLASS COST = </label>
+  <label for="gc">GLASS COST  </label>
   <input type="number" id="gc" disabled>
    
      </br>
-      <label for="psf"><span >PSF COST</span> = </label>
+      <label for="psf"><span >PSF COST</span></label>
       <input type="number" id="psf" disabled>
     </div>
     </div>
-        
+  </section>
+</main>
+<div class="circle1"></div>
+<div class="circle2"></div>    
   </body>
 </html>
