@@ -18,13 +18,13 @@
           </div>
           <div class="links">
             <div class="link">
-              <h2>3 TRACK 8mm</h2>
+              <button>3-TRACK 8mm</button> 
             </div>
             <div class="link">
-              <h2>CASEMENT</h2>
+              <button>CASEMENT</button>
             </div>
-            <div class="link">
-              <h2>SINGLE TRACK/FIXED</h2>
+            <div class="link left-panel-button">
+              <button onclick="singleTrack()" id="singletrack">SINGLE TRACK/FIXED</button>
             </div>
          </div>
           <div class="pro">
@@ -43,19 +43,23 @@
       </div>
 
     <div class="psfresult">
+      <div id="fCost">
       <label for="fc">FRAME COST </label>
       <input type="number" id="fc" disabled>
-    </br>
+    </div>
+    <div id="gifcost">
       <label for="gifc">GI FRAME COST  </label>
       <input type="number" id="gifc" disabled>
-      </br>
-      <label for="sc">SASH COST  </label>
+    </div>
+      <div id="sccost">
+    <label for="sc" id="sc_l">SASH COST  </label>
       <input type="number" id="sc" disabled>
-    </br>
+    </div>
+    <div id="giscost">
     <label for="gisc">GI SASH COST  </label>
     <input type="number" id="gisc" disabled>
      
-  </br>
+  </div>
   <label for="gc">GLASS COST  </label>
   <input type="number" id="gc" disabled>
    

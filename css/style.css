@@ -14,7 +14,7 @@
   }
   
   h3 {
-    color: #426696;
+    color: #84f7fffa;
     font-weight: 600;
     opacity: 0.8;
   }
@@ -82,8 +82,10 @@
     padding: 1rem 5rem;
     align-items: center;
   }
-  .link h2 {
-    padding: 0rem 2rem;
+  .link button {
+    width: 25vh;
+    padding-left:5%; 
+
   }
    
   .user{
@@ -97,7 +99,7 @@
   
   .pro {
     background: linear-gradient(to right top, #65dfc9, #6cdbeb);
-    border-radius: 2rem;
+    border-radius: 3rem;
     color: white;
     padding-left: 5rem;
     padding-right: 5rem;
@@ -161,10 +163,17 @@
     border-radius: 2rem;
     cursor: pointer;
     align-self: center;
+    box-shadow: 0 9px #999;
+
   }
   .button_align {
   padding-left:65%; 
  }
   button:hover {
     background-color: #45a049;
+  }
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }

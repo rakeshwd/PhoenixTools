@@ -33,3 +33,12 @@ var mesh=(num1*(num2/2))*20;
     gc.value=glasscost;
     psf.value=psfcost/(num1*num2)
   }
+
+  function singleTrack(){
+    var hideelement = document.getElementById('sccost');
+        // clock is visible. hide it
+        hideelement.style.display = 'none';
+        
+  }        
+
+  
