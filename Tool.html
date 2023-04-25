@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Sum Calculator</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>    
-  </head>
-  
-  <body>
-    <main>
-      <section class="glass">
-        <div class="dashboard">
-          <div class="user">
-            <img src="./images/user.svg" alt="" />
-            <h3>Dhirendra Pant</h3>
 
+<head>
+  <meta charset="UTF-8">
+  <title>Sum Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <main>
+    <section class="glass">
+      <div class="dashboard">
+        <div class="user">
+          <img class="img" src="./images/Png_user.png" alt="" />
+          <h3>Dhirendra Pant</h3>
+
+        </div>
+        <div class="links">
+          <div class="link left-panel-button">
+            <button onclick="threetrack()" id="3track8mm">3-TRACK 8mm</button>
           </div>
-          <div class="links">
-            <div class="link">
-              <button>3-TRACK 8mm</button> 
-            </div>
-            <div class="link">
-              <button>CASEMENT</button>
-            </div>
-            <div class="link left-panel-button">
-              <button onclick="singleTrack()" id="singletrack">SINGLE TRACK/FIXED</button>
-            </div>
-         </div>
-          <div class="pro">
-            <span>POWERED BY PHOENIX</span>
+          <div class="link left-panel-button">
+            <button onclick="casement()" id="casement">CASEMENT</button>
+          </div>
+          <div class="link left-panel-button">
+            <button onclick="singleTrack()" id="singleTrack">SINGLE TRACK/FIXED</button>
           </div>
         </div>
-    <div>
-      <div class="company"> UPVC Quotation Software by Phoenix Software Solutions</div>
-
-      <label for="num1">LENGTH in feet:</label>
-      <input class="calculate" type="number" id="num1">
-      <label for="num2">BREADTH in feet:</label>
-      <input class="calculate" type="number" id="num2">
-      <div class="button_align">
-      <button onclick="sum()">CALCULATE</button>
+        <div class="pro">
+          <span>POWERED BY PHOENIX</span>
+        </div>
       </div>
+      <div>
+        <div class="company">UPVC Quotation Software by Phoenix Software Solutions</div>
 
-    <div class="psfresult">
-      <div id="fCost">
-      <label for="fc">FRAME COST </label>
-      <input type="number" id="fc" disabled>
-    </div>
-    <div id="gifcost">
-      <label for="gifc">GI FRAME COST  </label>
-      <input type="number" id="gifc" disabled>
-    </div>
-      <div id="sccost">
-    <label for="sc" id="sc_l">SASH COST  </label>
-      <input type="number" id="sc" disabled>
-    </div>
-    <div id="giscost">
-    <label for="gisc">GI SASH COST  </label>
-    <input type="number" id="gisc" disabled>
-     
-  </div>
-  <label for="gc">GLASS COST  </label>
-  <input type="number" id="gc" disabled>
-   
-     </br>
-      <label for="psf"><span >PSF COST</span></label>
-      <input type="number" id="psf" disabled>
-    </div>
-    </div>
-  </section>
-</main>
-<div class="circle1"></div>
-<div class="circle2"></div>    
-  </body>
+        <label for="num1">LENGTH (mm):</label>
+        <input class="calculate" type="number" id="num1">
+        <label for="num2">BREADTH (mm):</label>
+        <input class="calculate" type="number" id="num2">
+        <div class="button_align">
+          <button onclick="sum()">CALCULATE</button>
+        </div>
+
+        <div class="psfresult">
+          <div id="fCost">
+            <label for="fc">FRAME COST </label>
+            <input type="number" id="fc" disabled>
+          </div>
+          <div id="gifcost">
+            <label for="gifc">GI FRAME COST </label>
+            <input type="number" id="gifc" disabled>
+          </div>
+          <div id="sccost">
+            <label for="sc" id="sc_l">SASH COST </label>
+            <input type="number" id="sc" disabled>
+          </div>
+          <div id="giscost">
+            <label for="gisc">GI SASH COST </label>
+            <input type="number" id="gisc" disabled>
+
+          </div>
+          <label for="gc">GLASS COST </label>
+          <input type="number" id="gc" disabled>
+
+          </br>
+          <label for="psf"><span>PSF COST</span></label>
+          <input type="number" id="psf" disabled>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+</body>
+
 </html>

@@ -1,24 +1,29 @@
   /* Center the content */
-   
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   h1 {
     color: #426696;
     font-weight: 600;
     font-size: 3rem;
     opacity: 0.8;
   }
+
   h2,
   p {
     color: white;
     font-weight: 500;
     opacity: 0.8;
   }
-  
+
   h3 {
     color: #84f7fffa;
     font-weight: 600;
     opacity: 0.8;
   }
-  
+
   main {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
@@ -27,43 +32,42 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .glass {
     background: white;
     min-height: 80vh;
     width: 85%;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.3)
-    );
+    background: linear-gradient(to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3));
     border-radius: 2rem;
     z-index: 2;
     backdrop-filter: blur(2rem);
     display: flex;
   }
+
   .circle1,
   .circle2 {
     background: white;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.3)
-    );
+    background: linear-gradient(to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.3));
     height: 20rem;
     width: 20rem;
     position: absolute;
     border-radius: 50%;
   }
-  
+
   .circle1 {
     top: 2%;
     right: 1%;
   }
+
   .circle2 {
     bottom: 3%;
     left: 2%;
   }
+
   .dashboard {
     flex: .7;
     display: flex;
@@ -71,32 +75,39 @@
     align-items: center;
     justify-content: space-evenly;
     text-align: left;
-    background: linear-gradient(to right top, #6cdbeb,#1d8370);
+    background: linear-gradient(to right top, #6cdbeb, #1d8370);
 
     border-radius: 2rem;
-    
+
   }
+
   .link {
     display: flex;
     margin: 2rem 0rem;
     padding: 1rem 5rem;
     align-items: center;
   }
+
   .link button {
     width: 25vh;
-    padding-left:5%; 
+    padding-left: 5%;
 
   }
-   
-  .user{
+
+  .user {
     background: linear-gradient(to right top, #1d8370, #6cdbeb);
     border-radius: 50rem;
-    width:80%;
+    width: 80%;
     padding-left: 1px;
     text-align: center;
     color: white;
   }
-  
+
+  .img {
+    width: 50px;
+    padding: 0px;
+  }
+
   .pro {
     background: linear-gradient(to right top, #65dfc9, #6cdbeb);
     border-radius: 3rem;
@@ -105,8 +116,9 @@
     padding-right: 5rem;
     position: relative;
   }
-  .company{
-    
+
+  .company {
+
     padding: 20px;
     padding-bottom: 40px;
     font-size: xx-large;
@@ -114,46 +126,47 @@
     color: rgb(24, 173, 173);
     text-align: center;
   }
-  
+
   /* Style the textboxes and button */
   input[type="number"] {
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.3)
-    );
+    background: linear-gradient(to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3));
     border: none;
     border-radius: 2rem;
     padding: 10px;
     font-size: 16px;
     border: 2px solid #ccc;
-    
-  }
-  .calculate{
-    width:70px;
-  }
- .psfresult{
-  padding-top: 10%;
-  padding-left: 30%;
-      }
 
-      label{
-        display: inline-block;
-        width: 130px;
-        padding: 2vh;
-        text-align: left;
-      }
-  label span { 
-        
+  }
+
+  .calculate {
+    width: 70px;
+  }
+
+  .psfresult {
+    padding-top: 10%;
+    padding-left: 30%;
+  }
+
+  label {
+    display: inline-block;
+    width: 130px;
+    padding: 2vh;
+    text-align: left;
+  }
+
+  label span {
+
     font-size: 15px;
     padding: 10px;
     background: linear-gradient(to right top, #075748, #10cdeb);
     border-radius: 10px;
     border: 2px solid;
-      
-      }
 
-      button {
+  }
+
+  button {
     padding: 10px 10px;
     margin: 10px 15%;
     font-size: 16px;
@@ -166,12 +179,15 @@
     box-shadow: 0 9px #999;
 
   }
+
   .button_align {
-  padding-left:65%; 
- }
+    padding-left: 65%;
+  }
+
   button:hover {
     background-color: #45a049;
   }
+
   button:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
