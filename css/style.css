@@ -78,12 +78,14 @@
     background: linear-gradient(to right top, #6cdbeb, #1d8370);
 
     border-radius: 2rem;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 
   }
 
   .link {
     display: flex;
-    margin: 2rem 0rem;
+    margin: 0.2rem 0rem;
     padding: 1rem 5rem;
     align-items: center;
   }

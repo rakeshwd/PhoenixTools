@@ -19,13 +19,19 @@
         </div>
         <div class="links">
           <div class="link left-panel-button">
-            <button onclick="threetrack()" id="3track8mm">3-TRACK 8mm</button>
+            <button onclick="setDesign(1)" id="3track8mm">3-TRACK 8mm</button>
           </div>
           <div class="link left-panel-button">
-            <button onclick="casement()" id="casement">CASEMENT</button>
+            <button onclick="setDesign(2)" >CASEMENT</button>
           </div>
           <div class="link left-panel-button">
-            <button onclick="singleTrack()" id="singleTrack">SINGLE TRACK/FIXED</button>
+            <button onclick="setDesign(3)" >SINGLE TRACK/FIXED</button>
+          </div>
+          <div class="link left-panel-button">
+            <button onclick="setDesign(4)" >TWO TRACK/FIXED</button>
+          </div>
+          <div class="link left-panel-button">
+            <button onclick="setDesign(5)" >2.5 TRACK/FIXED</button>
           </div>
         </div>
         <div class="pro">
@@ -35,12 +41,12 @@
       <div>
         <div class="company">UPVC Quotation Software by Phoenix Software Solutions</div>
 
-        <label for="num1">LENGTH (mm):</label>
+        <label for="num1">WIDTH (mm):</label>
         <input class="calculate" type="number" id="num1">
-        <label for="num2">BREADTH (mm):</label>
+        <label for="num2">HEIGHT (mm):</label>
         <input class="calculate" type="number" id="num2">
         <div class="button_align">
-          <button onclick="sum()">CALCULATE</button>
+          <button onclick="calculate()">CALCULATE</button>
         </div>
 
         <div class="psfresult">
