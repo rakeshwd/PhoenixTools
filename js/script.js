@@ -40,7 +40,7 @@ switch (design) {
 
   var gc = document.getElementById("gc");
   var glasscost = (num1 * num2)/92903.04 * 80;
-  var beading = (num1 + (num2 / 2)) * 2 / 1000 * 33.369 * 3;
+  var beading = ((num1/2) + num2) * 2 / 1000*33.369*3*1.1;
 
   var mesh = ((num1/2) * num2 )/92903.04 * 20;
 
@@ -65,9 +65,9 @@ switch (design) {
 
   var gc = document.getElementById("gc");
   var glasscost = (num1 * num2)/92903.04 * 80;
-  var beading = (num1 + (num2 / 2)) * 2 / 1000 * 33.369 * 3;
+  var beading = (num1 + num2) * 2 / 1000*42.336*1.1;
 
-  var mesh = ((num1/2) * num2 )/92903.04 * 20;
+  var mesh = (num1 * num2 )/92903.04 * 20;
 
   var psf = document.getElementById("psf");
   var psfcost = framecost + giframecost + sashcost + gisashcost + glasscost + 80 + 100 + beading + mesh + 100 + misc;
