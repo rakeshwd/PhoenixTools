@@ -76,11 +76,9 @@
     justify-content: space-evenly;
     text-align: left;
     background: linear-gradient(to right top, #6cdbeb, #1d8370);
-
     border-radius: 2rem;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-
   }
 
   .link {
@@ -93,7 +91,6 @@
   .link button {
     width: 25vh;
     padding-left: 5%;
-
   }
 
   .user {
@@ -168,11 +165,15 @@
 
   }
 
+  ul {
+    box-shadow: 0 9px #999;
+
+  }
   button {
     padding: 10px 10px;
     margin: 10px 15%;
     font-size: 16px;
-    background-color: #4CAF50;
+    background-color: #DB592A;
     color: white;
     border: none;
     border-radius: 2rem;
@@ -192,6 +193,11 @@
 
   button:active {
     background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    box-shadow: 0 5px #d33f3f;
+    transform: translateY(2px);
   }
+  button::after{
+    background-color: #10cdeb;
+    border: 5px;
+  }
+ 
