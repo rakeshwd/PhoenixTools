@@ -99,7 +99,7 @@
     list-style-type: none;
   }
 
-  ul li:visited{
+  ul li a:visited{
     color: #10cdeb;
     background: linear-gradient(to right top, #6cdbeb, #1d8370);
 
