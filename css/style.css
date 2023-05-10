@@ -114,7 +114,30 @@
     border:0px;
     
   }
-  
+  #fixedBox {
+    position: fixed;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    height: 300px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: hidden;
+  }
+  #windowContainer {
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 100%;
+      max-height: 100%;
+  }
+
+  .track {
+    background-color: #ccc;
+    margin-right: 10px;
+  }
   .menu-item {
     margin-bottom: 3px;
     border: 2px solid #ffffff;
@@ -198,7 +221,7 @@
 
   .psfresult {
     padding-top: 10%;
-    padding-left: 30%;
+    padding-left: 5%;
   }
 
   label {
@@ -230,11 +253,20 @@
     cursor: pointer;
     align-self: center;
     box-shadow: 0 9px #999;
-
   }
 
   .button_align {
     padding-left: 65%;
+    display: inline-block;
+
+  }
+  .button-container {
+    text-align: center;
+  }
+
+  .button-container button {
+    display: inline-block;
+    margin-right: 10px;
   }
 
   button:hover {

@@ -96,3 +96,39 @@ switch (design) {
 
 }
 
+function drawWindow() {
+  var breadth = parseInt(document.getElementById("num1").value);
+  var length = parseInt(document.getElementById("num2").value);
+  const fixedBox = document.getElementById('fixedBox');
+      const fixedBoxWidth = fixedBox.offsetWidth;
+      const fixedBoxHeight = fixedBox.offsetHeight;
+
+      // Calculate the available space for the window drawing
+      const availableWidth = fixedBoxWidth - 20; // Subtract padding
+      const availableHeight = fixedBoxHeight - 20; // Subtract padding
+
+      // Calculate the dimensions of each window track or casement
+      let trackWidth = Math.floor(length / 3);
+      let windowHeight = Math.floor(breadth / 2);
+
+      // Adjust dimensions if they exceed the available space
+      if (trackWidth > availableWidth) {
+        trackWidth = availableWidth;
+        windowHeight = Math.floor((trackWidth / (length / 3)) * (breadth / 2));
+      }
+
+      if (windowHeight > availableHeight) {
+        windowHeight = availableHeight;
+        trackWidth = Math.floor((windowHeight / (breadth / 2)) * (length / 3));
+      }
+
+      // Create an HTML string for the three-track or casement window
+      let windowHTML = '';
+      windowHTML += `<div class="track" style="width: ${trackWidth}px; height: ${windowHeight}px;"></div>`;
+      windowHTML += `<div class="track" style="width: ${trackWidth}px; height: ${windowHeight}px;"></div>`;
+      windowHTML += `<div class="track" style="width: ${trackWidth}px; height: ${windowHeight}px;"></div>`;
+
+      // Insert the window HTML into the window container
+      const container = document.getElementById('windowContainer');
+      container.innerHTML = windowHTML;
+}
