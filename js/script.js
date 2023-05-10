@@ -1,7 +1,9 @@
 var design=1; // default value for design
 
-		function setDesign(value) {
-			design = value; // set the value of design based on the button clicked
+		function setDesign(value,element) {
+			design = value; 
+      changeColor(element);
+      document.getElementsByTagName("li").default;
       document.getElementById("num1").value = "";
 			document.getElementById("num2").value = "";
       document.getElementById("fc").value = "";
@@ -12,7 +14,16 @@ var design=1; // default value for design
       document.getElementById("psf").value="";
     }
 
-
+    function changeColor(element) {
+      // Remove 'active' class from all menu items
+      const menuItems = document.querySelectorAll('.menu-item');
+      menuItems.forEach((menuItem) => {
+        menuItem.classList.remove('active');
+      });
+    
+      // Add 'active' class to the clicked menu item
+      element.classList.add('active');
+    }
 
 function calculate() {
 

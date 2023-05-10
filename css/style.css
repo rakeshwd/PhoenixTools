@@ -92,18 +92,18 @@
     background: linear-gradient(to right top, #9ae6f2, #1d8370);
 
   }
+
+  
   ul li{
     position: relative;
     border-radius: 30px;
-    padding: 2px;
     list-style-type: none;
-  }
-
-  ul li a:visited{
-    color: #10cdeb;
-    background: linear-gradient(to right top, #6cdbeb, #1d8370);
+    background-color:#02081B;
+    color: teal;
 
   }
+
+  
   .nav ul li:nth-child(1) {
     background: linear-gradient(to right top, #1d8370, #6cdbeb);
     border-radius: 50rem solid red;
@@ -111,14 +111,41 @@
     padding-left: 1px;
     text-align: center;
     color: white;
+    border:0px;
+    
+  }
+  
+  .menu-item {
+    margin-bottom: 3px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px #377a75;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: #10cdeb;
+    box-shadow: 0 5px #0d7b91;
+    transform: translateX(10px);
+  }
+  
+  li:active:nth-child(1){
+    transform: translateY(0px);
+    box-shadow: 0;
+
+  }
+  li:active:nth-child(7){
+    transform: translateY(0px);
+    box-shadow: 0 0px;
+
   }
 
   ul li:hover{
     background: white;
+    border: 2px solid black;
 
   }
   ul li a{
-    padding: 2px;
+    padding-left: 1rem;
     position: relative;
     display: block;
     width:100%;
@@ -126,7 +153,7 @@
     color: white;
   }
   ul li a:hover{
-    color: teal;
+    color: grey;
 
   }
     ul li:nth-child(7) {
